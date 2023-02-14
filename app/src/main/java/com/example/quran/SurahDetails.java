@@ -37,10 +37,11 @@ public class SurahDetails extends AppCompatActivity {
         int startIndex= quranInfo.getSurahStart(SurahIndex);
 //        int SurahVerses=quranInfo.getSurahVerses(SurahIndex);
         int NextSurahIndex=quranInfo.getSurahStart(SurahIndex);
-//        if(startIndex<CurrentParahStart)
-//        {
-//            startIndex=CurrentParahStart-startIndex;
-//        }
+        if(nameSurah.equals("") || nameSurah.equals("") || nameSurah.equals("")) {
+            if (startIndex < CurrentParahStart) {
+                startIndex = CurrentParahStart - startIndex;
+            }
+        }
         for (int i = startIndex-1; i < NextSurahIndex-1; i++)
         {
 
